@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+}
+
+.page {
+  padding: 5px 10px;
+  background-image: url(https://img.freepik.com/free-photo/card-soft-template-paper-report_1258-167.jpg?t=st=1719739046~exp=1719742646~hmac=346bc2241c77c28246ba80160d2d68444dd9f2825d7862b93565ef056aa65bb8&w=740);
+  flex-direction: column;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  min-height: 100vh;
+}
+
+.Payment_Title {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 22px;
+}
+
+.payment_Body {
+  position: relative;
+}
+.payment_Body::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  opacity: 0.2;
+  background-color: #f32f0d;
+}
+.payment_Body .inner {
+  width: min(100% - 24px, 500px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  color: #f7f7f7;
+  background-color: #1c1c1c;
+  padding: 10px 22px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  position: relative;
+  z-index: 3;
+  padding-top: 120px;
+}
+.payment_Body .inner .icon {
+  width: 100px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+}
+.payment_Body .inner .icon svg {
+  z-index: 3;
+}
+.payment_Body .inner .icon::before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e90d01;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+.payment_Body .inner .icon svg {
+  width: 55px;
+  height: 55px;
+  z-index: 3;
+  position: relative;
+}
+.payment_Body .inner .Body_Title h3 {
+  font-size: 35px;
+  color: #f7f7f7;
+  padding: 5px;
+}
+.payment_Body .inner .Body_Title p {
+  font-size: 19px;
+  color: #8b8989;
+}
+.payment_Body .inner .price {
+  text-align: start;
+  background-color: #292929;
+  padding: 20px 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.payment_Body .inner .price h4 {
+  font-size: 29px;
+  padding: 20px;
+}
+.payment_Body .inner .price p {
+  color: #8b8989;
+  padding-top: 10px;
+}
+.payment_Body .inner .price h5 {
+  color: #fff;
+  padding-top: 10px;
+}
+.payment_Body .inner .ref {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.payment_Body .inner .ref .order p {
+  color: #868686;
+  padding-bottom: 12px;
+}
+.payment_Body .inner .ref .order span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.payment_Body .inner .ref .order span h4 {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */
